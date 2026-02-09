@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>
+            Javascript callback
+        </h2>
+        <script>
+            function greeting(name){
+                alert(`hello,${name}`);
+            }
+            function processUserInput(callback){
+                const name = prompt("Please enter your name.");
+                callback(name);
+            }
+            processUserInput(greeting);
+        </script>
+    </body>
+</html>
